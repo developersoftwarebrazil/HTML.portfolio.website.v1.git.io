@@ -5,6 +5,7 @@
   align-items: center;
   padding: 3.75rem;
   gap: 3.75rem;
+  animation: initilize .7s forwards;
 }
 .curriculum .heading{
  display: grid;
@@ -14,8 +15,15 @@
 .curriculum .heading h2{
   font-weight: 600;
   color: var(--second-text-color);
+  animation: initilize .7s forwards;
 }
 .curriculum .heading p{
   font-weight: 200;
   color: var(--text-color);
+  }
+  .typing::after{
+    content: '|';
+    margin-left: .25rem;
+    opacity: 1;
+    animation: blinkingCursor .5s infinite;
   }
